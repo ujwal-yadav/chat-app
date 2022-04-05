@@ -18,7 +18,7 @@ export const ChatPage = () => {
 
   useEffect(async () => {
     if (!localStorage.getItem("chat-app-user")) {
-      navigate("/");
+      navigate("/login");
     } else {
       setCurrentUser(await JSON.parse(localStorage.getItem("chat-app-user")));
     }
